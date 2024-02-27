@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -15,7 +15,22 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-image: url("/background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 
-body {
-  background-color: black;
+/* custom css */
+.glassBackgroundColor {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
 }
