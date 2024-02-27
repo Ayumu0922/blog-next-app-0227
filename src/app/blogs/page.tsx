@@ -11,10 +11,10 @@ const BlogsPage = () => {
             <Link
               href={`/blogs/${post.id}`}
               key={post.id}
-              className="glassBackgroundColor rounded-sm p-3"
+              className="glassBackgroundColor rounded-sm p-4"
             >
               <h2 className=" text-xl font-bold">{post.title}</h2>
-              <p>Written by: {post.username}</p>
+              <p className=" text-base ">Written by: {post.username}</p>
             </Link>
           ))}
         </div>
